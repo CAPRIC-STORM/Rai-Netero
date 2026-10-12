@@ -69,3 +69,21 @@ body:before{content:'';position:fixed;inset:0;pointer-events:none;z-index:20;bac
 @media(max-width:720px){
   .music-player{left:12px;right:auto;bottom:12px;align-items:flex-start;}
 }
+
+/* Repertoire du Souffle de la Foudre */
+.forms-showcase{padding:44px 0 20px}
+.form-heading{max-width:820px;margin:0 0 32px}
+.form-heading h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2.6rem,5vw,4.5rem);line-height:1.04;font-weight:500;color:#f1ede5;margin:18px 0 14px}
+.form-heading h2 em{font-weight:400;color:#e4c586;font-style:italic}
+.form-heading>p{color:#b5bdc8;font-size:15px;line-height:1.8;max-width:610px}
+.forms-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.form-card{display:grid;grid-template-columns:57px minmax(0,1fr);gap:13px;padding:24px 21px 25px;background:linear-gradient(144deg,rgba(31,45,62,.92),rgba(10,17,27,.98));border:1px solid #75694f;border-radius:4px;min-height:244px;position:relative;overflow:hidden}
+.form-card::after{content:'雷';position:absolute;right:8px;bottom:-27px;font-size:120px;font-family:Georgia,serif;color:rgba(222,195,126,.035);pointer-events:none}
+.form-number{color:#dec38b;border:1px solid #9e855a;width:42px;height:42px;display:grid;place-items:center;font:500 18px Georgia,serif;letter-spacing:.02em}
+.form-details{position:relative;z-index:1;min-width:0}
+.form-eyebrow{display:block;letter-spacing:.21em;text-transform:uppercase;font-size:9px;font-weight:700;color:#cbaf7e;margin:2px 0 12px}
+.form-details h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(22px,2.45vw,31px);line-height:1.17;font-weight:500;color:#f4efe6;margin:0 0 10px}
+.form-japanese{font-size:12px;color:#d5b778;line-height:1.65;margin-bottom:12px}
+.form-details p{font-size:13px;line-height:1.8;color:#c4cbd3;margin:0}
+@media (max-width:860px){.forms-grid{grid-template-columns:1fr}.form-card{min-height:0}}
+@media (max-width:540px){.form-card{padding:20px 14px;grid-template-columns:46px minmax(0,1fr);gap:9px}.form-number{width:36px;height:36px}}
